@@ -127,11 +127,10 @@ li {
     background-color: white;
     color: black;
 }
-
 #peter img {
-    height: 200px;
-    width: 200px;
-    border-radius: 40%;
+    max-height: 200px;
+    max-width: 200px;
+    border-radius: 20%;
 }
 
 .skill img {
