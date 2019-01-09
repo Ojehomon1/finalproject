@@ -1,0 +1,269 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    font-size: 30px;
+    color: #444;
+}
+
+#main-content {
+    max-width: 1032px;
+    padding-top: 5px;
+    margin: 0 auto;
+}
+
+.blue-bg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(222, 47, 107);
+    margin-top: 3.2rem;
+    font-size: 2rem;
+    height: 18rem;
+    text-align: center;
+}
+
+
+/* shadow style */
+
+.blue-bg>h2 {
+    color: white;
+    text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, .1), 0 0 5px rgba(0, 0, 0, .1), 0 1px 3px rgba(0, 0, 0, .3), 0 3px 5px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .2), 0 20px 20px rgba(0, 0, 0, .15);
+}
+
+.blue-bg>p {
+    color: white;
+    text-shadow: 0px 2px 2px rgba(255, 255, 255, 0.4);
+}
+
+
+/* end of shadow style */
+
+.main-article {
+    padding: 0 1rem;
+}
+
+article>p {
+    margin-top: 1rem;
+    font-family: Helvetica, Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.66666667;
+    color: #262626;
+}
+
+
+/* next sections */
+
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+#nav-logo {
+    color: white;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, .1), 0 0 5px rgba(0, 0, 0, .1), 0 1px 3px rgba(0, 0, 0, .3), 0 3px 5px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .2), 0 20px 20px rgba(0, 0, 0, .15);
+}
+
+
+/* NAVIGATION */
+
+#nav-background {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    background-color: rgb(46, 54, 60);
+    border-bottom: 1px solid #ddd;
+}
+
+#nav-container {
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#nav-header {
+    display: flex;
+    align-items: center;
+}
+
+#nav-logo:hover {
+    color: darkorange;
+}
+
+.nav-ul {
+    display: flex;
+    max-width: 700px;
+}
+
+.nav-ul>li {
+    display: flex;
+    margin-top: 12px;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: 200ms;
+}
+
+.nav-link:hover {
+    background-color: darkorange;
+}
+
+.active-link {
+    background-color: white;
+    color: black;
+}
+
+#peter img {
+    height: 200px;
+    width: 200px;
+    border-radius: 40%;
+}
+
+.skill img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.skills {
+    text-align: right;
+    padding: 10px;
+    color: white;
+}
+
+.html {
+    width: 50%;
+    background-color: rgb(135, 185, 136);
+}
+
+.css {
+    width: 40%;
+    background-color: #2196F3;
+}
+
+.js {
+    width: 10%;
+    background-color: #f44336;
+}
+
+.english {
+    width: 100%;
+    background-color: lightseagreen;
+}
+
+.german {
+    width: 75%;
+    background-color: green;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    background-color: rgb(46, 54, 60);
+    color: white;
+    text-align: left;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+
+/* MOBILE MENU */
+
+@media screen and (max-width: 700px) {
+    #nav-container {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        text-align: center;
+    }
+    #nav-menu-button {
+        padding: 1rem;
+        background-color: #f1f1f1;
+        cursor: pointer;
+    }
+    .nav-ul {
+        display: block;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        overflow: auto;
+        direction: rtl;
+        max-height: 80vh;
+    }
+    .hide-ul {
+        max-height: 0;
+    }
+    .nav-link {
+        padding: 1rem 0;
+        font-size: 1.3rem;
+        border-bottom: 1px solid #f4f4f4;
+    }
+}
+
+
+/* END MOBILE MENU */
+
+
+/* DESKTOP MENU */
+
+@media screen and (min-width: 701px) {
+    #nav-menu-button {
+        display: none;
+    }
+    .nav-link {
+        flex-basis: auto;
+        padding: 1rem 1.5rem;
+    }
+}
+
+
+/* This moves the logo so that it's not touching the left side */
+
+@media screen and (max-width: 1040px) {
+    #nav-logo {
+        margin-left: 1rem;
+    }
+}
